@@ -62,3 +62,86 @@ header h1 {
   padding-top: 1rem;
   font-size: 1.5rem;
 }
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.score-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.score-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.score-popup h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.score-popup p {
+  font-size: 2rem;
+  color: #1f1f1f;
+  margin-bottom: 2rem;
+}
+
+.score-popup button {
+  padding: 1rem 2rem;
+  background: #00c4ff;
+  color: #1f1f1f;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.score-popup button:hover {
+  background: darken(#00c4ff, 10%);
+}
+
+.color-result-container {
+  display: flex;
+}
+
+.target-color-result {
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+  background-color: #00c4ff;
+}
+
+.user-color-result {
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+  background-color: #00c4ff;
+}
