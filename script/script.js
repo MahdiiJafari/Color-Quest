@@ -26,3 +26,9 @@ function generateRandomColor() {
   return { r, g, b, hex: `rgb(${r}, ${g}, ${b})` };
 }
 
+function calculateScore(target, selected) {
+  const rDiff = Math.abs(target.rgb.r - selected.rgb.r);
+  const gDiff = Math.abs(target.rgb.g - selected.rgb.g);
+  const bDiff = Math.abs(target.rgb.b - selected.rgb.b);
+  return Math.sqrt(rDiff * rDiff + gDiff * gDiff + bDiff * bDiff).toFixed(3);
+}
