@@ -28,7 +28,20 @@
         <p>Click on color wheel to guess the color</p>
       </div>
     </div>
-
+    <div class="popup-overlay" id="popup-overlay"></div>
+    <div class="score-popup" id="score-popup">
+      <h2>Your Score</h2>
+      <div class="color-result-container">
+        <div class="target-box">
+          <div class="target-color-result" id="target-color-result"></div>
+        </div>
+        <div class="picker-box">
+          <div class="user-color-result" id="user-color-result"></div>
+        </div>
+      </div>
+      <p id="popup-score">0.000</p>
+      <button id="next-round-btn">Next Round</button>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
     <script src="script/script.js"></script>
   </body>
