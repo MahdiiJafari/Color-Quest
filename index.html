@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Color Quest 🎯</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess The Color</h1>
+      <p class="game-status">
+        Score: <span id="score">0.000</span> | Round: <span id="round">1</span>
+      </p>
+      <p>Lower scores are better</p>
+    </header>
+    <div class="game-container">
+      <div class="target-box">
+        <div class="color-swatch" id="target-color"></div>
+        <p>Match this color by clicking on the color wheel</p>
+      </div>
+      <div class="picker-box">
+        <div id="color-picker"></div>
+        <p>Click on color wheel to guess the color</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
