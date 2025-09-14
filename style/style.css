@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+.game-status {
+  color: #1f1f1f;
+}
+
+.game-container {
+  background-color: #f4f4f4;
+  border-radius: 2rem;
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.color-swatch {
+  width: 200px;
+  height: 200px;
+  background-color: #00c4ff;
+  border-radius: 1.5rem;
+}
+
+.target-box,
+.picker-box {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.target-box p,
+.picker-box p {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
